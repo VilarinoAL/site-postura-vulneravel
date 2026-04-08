@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como arrumar a minha coluna</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #2c7be5; color: white; padding: 20px; text-align: center; }
+    .container { padding: 20px; }
+    .card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 10px; }
+    img { max-width: 100%; border-radius: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 10px; }
+    button { margin-top: 10px; padding: 10px; background: #2c7be5; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Como arrumar a minha coluna</h1>
+  <p>Aprenda sobre postura e teste seus conhecimentos</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Postura correta</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Posture.png" alt="Postura correta">
+    <p>Mantenha a coluna alinhada, ombros relaxados e evite curvar-se ao sentar.</p>
+  </div>
+
+  <div class="card">
+    <h2>Postura incorreta</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bad_posture.png" alt="Postura incorreta">
+    <p>Evite ficar muito tempo curvado no celular ou computador.</p>
+  </div>
+
+  <div class="card">
+    <h2>Teste seu conhecimento</h2>
+    <p>Qual é a postura ideal ao usar o computador?</p>
+    <input id="resposta" placeholder="Digite sua resposta">
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+  </div>
+
+  <div class="card">
+    <h2>Deixe um comentário</h2>
+    <textarea id="comentario"></textarea>
+    <button onclick="salvarComentario()">Enviar</button>
+    <div id="listaComentarios"></div>
+  </div>
+
+</div>
+
+<script>
+  // VULNERABILIDADE INTENCIONAL: XSS
+  function salvarComentario() {
+    const comentario = document.getElementById('comentario').value;
+    document.getElementById('listaComentarios').innerHTML += '<p>' + comentario + '</p>';
+  }
+
+  // Lógica simples de resposta
+  function verificar() {
+    const resposta = document.getElementById('resposta').value;
+    if(resposta.toLowerCase().includes('reta')) {
+      document.getElementById('resultado').innerText = 'Correto!';
+    } else {
+      document.getElementById('resultado').innerText = 'Tente novamente.';
+    }
+  }
+
+  // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
+  const params = new URLSearchParams(window.location.search);
+  const nome = params.get('nome');
+  if(nome) {
+    document.body.innerHTML += '<h3>Bem-vindo, ' + nome + '</h3>';
+  }
+</script>
+
+</body>
+</html>
