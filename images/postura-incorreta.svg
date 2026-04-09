@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Postura incorreta</title>
+  <desc id="desc">Pessoa sentada curvada para frente, com pescoço projetado e tela baixa.</desc>
+  <rect width="640" height="480" rx="36" fill="#fff8f7"/>
+  <rect x="48" y="382" width="544" height="16" rx="8" fill="#f1d8d5"/>
+  <circle cx="544" cy="88" r="42" fill="#ef4444"/>
+  <path d="M524 68l40 40M564 68l-40 40" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M246 132 C266 170 286 208 308 250" fill="none" stroke="#f3a6a0" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 16"/>
+  <path d="M388 226 L500 210 L520 250 L408 266 Z" fill="#fee2e2" stroke="#ef4444" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="374" y="252" width="132" height="14" rx="7" fill="#ef4444"/>
+  <rect x="214" y="248" width="104" height="18" rx="9" fill="#f3b1aa"/>
+  <rect x="186" y="194" width="22" height="160" rx="11" fill="#f3b1aa"/>
+  <line x1="238" y1="266" x2="238" y2="370" stroke="#f3b1aa" stroke-width="14" stroke-linecap="round"/>
+  <line x1="286" y1="266" x2="286" y2="370" stroke="#f3b1aa" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="304" cy="170" r="34" fill="#ffd6b3"/>
+  <path d="M280 202 C292 220 304 240 308 268" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M290 228 L356 240 L392 256" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M308 268 L344 286" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M344 286 L336 344 L390 344" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M308 268 L282 336 L232 336" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="88" fill="#ef4444" font-family="Arial, sans-serif" font-size="28" font-weight="700">Coluna curvada</text>
+  <text x="52" y="124" fill="#7a4d48" font-family="Arial, sans-serif" font-size="20">Pescoço projetado para frente</text>
+</svg>

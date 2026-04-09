@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Postura correta</title>
+  <desc id="desc">Pessoa sentada com a coluna ereta, monitor na altura dos olhos e pés apoiados no chão.</desc>
+  <rect width="640" height="480" rx="36" fill="#f7fbff"/>
+  <rect x="48" y="382" width="544" height="16" rx="8" fill="#d8e6f5"/>
+  <circle cx="544" cy="88" r="42" fill="#16a34a"/>
+  <path d="M524 88l14 14 26-32" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="260" y1="118" x2="260" y2="336" stroke="#9fd2ae" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 16"/>
+  <rect x="370" y="116" width="130" height="88" rx="16" fill="#dfeeff" stroke="#2c7be5" stroke-width="8"/>
+  <rect x="420" y="204" width="28" height="42" rx="9" fill="#2c7be5"/>
+  <rect x="374" y="246" width="122" height="14" rx="7" fill="#2c7be5"/>
+  <rect x="214" y="248" width="104" height="18" rx="9" fill="#8fbce6"/>
+  <rect x="186" y="194" width="22" height="160" rx="11" fill="#8fbce6"/>
+  <line x1="238" y1="266" x2="238" y2="370" stroke="#8fbce6" stroke-width="14" stroke-linecap="round"/>
+  <line x1="286" y1="266" x2="286" y2="370" stroke="#8fbce6" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="260" cy="154" r="34" fill="#ffd6b3"/>
+  <path d="M260 190 L260 272" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M260 214 L332 214 L356 240" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M260 272 L332 272" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M332 272 L332 340 L392 340" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M260 234 L214 258" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <path d="M214 258 L214 316" fill="none" stroke="#1f2a37" stroke-width="16" stroke-linecap="round"/>
+  <text x="52" y="88" fill="#2c7be5" font-family="Arial, sans-serif" font-size="28" font-weight="700">Costas retas</text>
+  <text x="52" y="124" fill="#5b6470" font-family="Arial, sans-serif" font-size="20">Tela na altura dos olhos</text>
+</svg>
