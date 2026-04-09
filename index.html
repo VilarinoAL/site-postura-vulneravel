@@ -1,201 +1,408 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Como arrumar a minha coluna kkkkkkkk</title>
+  <title>Como arrumar a minha coluna | Clinical Serenity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-variant": "#dce4e6",
+            "primary-fixed-dim": "#2bb1ee",
+            "surface-dim": "#d4dbde",
+            "tertiary-fixed": "#c8cffe",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e3e9eb",
+            "secondary-fixed": "#cee6f8",
+            tertiary: "#555d85",
+            "surface-container": "#eaeff0",
+            "on-surface-variant": "#596063",
+            "primary-dim": "#00597d",
+            "tertiary-dim": "#495178",
+            "on-tertiary-fixed-variant": "#474e76",
+            "on-tertiary-fixed": "#2a3257",
+            "tertiary-fixed-dim": "#bac1ef",
+            "error-container": "#fa746f",
+            "on-tertiary-container": "#3d456c",
+            "on-primary-container": "#00374e",
+            "on-secondary-fixed-variant": "#485e6e",
+            "surface-tint": "#00668e",
+            "on-secondary-container": "#3f5464",
+            background: "#f8fafb",
+            "primary-fixed": "#41befd",
+            error: "#a83836",
+            primary: "#00668e",
+            "on-primary": "#f5f9ff",
+            "on-error-container": "#6e0a12",
+            "primary-container": "#41befd",
+            "secondary-container": "#cee6f8",
+            "on-surface": "#2c3436",
+            "surface-bright": "#f8fafb",
+            "tertiary-container": "#c8cffe",
+            "on-primary-fixed-variant": "#00405b",
+            "secondary-fixed-dim": "#c0d7ea",
+            "surface-container-highest": "#dce4e6",
+            "on-tertiary": "#faf8ff",
+            "secondary-dim": "#405665",
+            "inverse-surface": "#0b0f10",
+            "inverse-primary": "#41befd",
+            surface: "#f8fafb",
+            "error-dim": "#67040d",
+            "inverse-on-surface": "#9a9d9e",
+            "on-secondary": "#f5f9ff",
+            "surface-container-low": "#f0f4f6",
+            "on-primary-fixed": "#001d2c",
+            "on-secondary-fixed": "#2c4250",
+            "outline-variant": "#acb3b6",
+            "on-background": "#2c3436",
+            outline: "#747c7e",
+            "on-error": "#fff7f6",
+            secondary: "#4c6271"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            headline: ["Manrope", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+            label: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
   <style>
-    :root {
-      --primary: #2c7be5;
-      --primary-dark: #1f67c8;
-      --background: #f4f7fb;
-      --surface: #ffffff;
-      --text: #1f2a37;
-      --border: #d7e3f1;
-    }
-
-    * {
-      box-sizing: border-box;
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: var(--background);
-      color: var(--text);
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafb;
+      color: #2c3436;
     }
 
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 24px 16px;
-      text-align: center;
+    h1, h2, h3 {
+      font-family: 'Manrope', sans-serif;
     }
 
-    header h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-    }
-
-    header p {
-      margin: 0;
-    }
-
-    .container {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 20px 16px 32px;
-    }
-
-    .card {
-      background: var(--surface);
-      padding: 20px;
-      margin-bottom: 20px;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 10px 24px rgba(31, 42, 55, 0.06);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
-
-    .posture-figure {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 16px 0 20px;
-    }
-
-    .posture-figure img {
-      display: block;
-      width: min(100%, 420px);
-      height: auto;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      background: #f8fbff;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border: 1px solid #c7d4e2;
-      border-radius: 12px;
-      font: inherit;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 12px 16px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    button:hover {
-      background: var(--primary-dark);
-    }
-
-    #listaComentarios p {
-      background: #f8fbff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 12px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 20px 14px;
-      }
-
-      .card {
-        padding: 16px;
-      }
-
-      .posture-figure img {
-        width: 100%;
-      }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
     }
   </style>
 </head>
-<body>
-
-<header>
-  <h1>Como arrumar a minha coluna</h1>
-  <p>Aprenda sobre postura e teste seus conhecimentos</p>
-</header>
-
-<div class="container">
-
-  <div class="card">
-    <h2>Postura correta</h2>
-    <div class="posture-figure">
-      <img src="images/postura-correta.svg" alt="Ilustração de postura correta" loading="lazy">
+<body class="bg-background text-on-background antialiased">
+  <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-white/75 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8">
+      <a href="#topo" class="text-xl font-extrabold tracking-tight text-sky-800 sm:text-2xl">Arruma a coluna</a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#educacao" class="font-semibold text-sky-700 transition-colors hover:text-sky-900">Educação</a>
+        <a href="#quiz" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Quiz</a>
+        <a href="#alinhamento" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Alinhamento</a>
+        <a href="#comunidade" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Comunidade</a>
+      </div>
+      <a href="#quiz" class="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-on-primary transition-transform hover:scale-105 hover:bg-primary-dim">Inicie</a>
     </div>
-    <p>Mantenha a coluna alinhada, ombros relaxados e os pés bem apoiados no chão ao sentar, se não tu vira um C kkkkkkkkkkkkkkkkkkkkk.</p>
-  </div>
+  </nav>
 
-  <div class="card">
-    <h2>Postura incorreta</h2>
-    <div class="posture-figure">
-      <img src="images/postura-incorreta.svg" alt="Ilustração de postura incorreta" loading="lazy">
+  <main id="topo" class="pt-20">
+    <div id="boasVindas" class="hidden border-b border-primary/10 bg-primary/5">
+      <div class="mx-auto max-w-7xl px-6 py-3 text-sm font-medium text-primary sm:px-8"></div>
     </div>
-    <p>Evite ficar muito tempo curvado no celular ou computador, pois isso sobrecarrega pescoço e lombar. Além de cansar as vistas de quem já é cega (VOCÊ) </p>
-  </div>
 
-  <div class="card">
-    <h2>Teste seu conhecimento</h2>
-    <p>Qual é a postura ideal ao usar o computador?não sei </p>
-    <input id="resposta" placeholder="Digite sua resposta">
-    <button onclick="verificar()">Verificar</button>
-    <p id="resultado"></p>
-  </div>
+    <section class="relative overflow-hidden pb-24 pt-16 md:pb-36 md:pt-24">
+      <div class="absolute right-0 top-0 -z-10 h-full w-1/2 bg-gradient-to-l from-secondary-container/40 to-transparent"></div>
+      <div class="mx-auto grid max-w-7xl gap-12 px-6 sm:px-8 md:grid-cols-2 md:items-center">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+            <span class="material-symbols-outlined text-base">health_and_safety</span>
+            Saúde, ergonomia e prevenção
+          </div>
+          <div class="space-y-6">
+            <h1 class="max-w-xl text-5xl font-extrabold leading-tight tracking-tight text-on-surface md:text-7xl">
+              Como arrumar a minha <span class="text-primary">coluna</span>
+            </h1>
+            <p class="max-w-xl text-lg leading-relaxed text-on-surface-variant md:text-xl">
+              Aprenda postura correta e cuide da sua saúde com orientações visuais simples, técnicas práticas e um quiz rápido para revisar os pontos mais importantes.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="#quiz" class="rounded-full bg-primary px-8 py-4 text-center text-lg font-bold text-on-primary shadow-lg shadow-primary/20 transition-transform hover:scale-105 hover:bg-primary-dim">Começar</a>
+            <a href="#educacao" class="rounded-full border border-primary/20 px-8 py-4 text-center font-bold text-primary transition-colors hover:bg-primary/5">Ver módulos</a>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
+              <p class="text-2xl font-extrabold text-on-surface">2 imagens</p>
+              <p class="text-sm text-on-surface-variant">Comparação visual local</p>
+            </div>
+            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
+              <p class="text-2xl font-extrabold text-on-surface">1 quiz</p>
+              <p class="text-sm text-on-surface-variant">Validação imediata</p>
+            </div>
+            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
+              <p class="text-2xl font-extrabold text-on-surface">Comunidade</p>
+              <p class="text-sm text-on-surface-variant">Comentários e troca de dicas</p>
+            </div>
+          </div>
+        </div>
 
-  <div class="card">
-    <h2>Deixe um comentário</h2>
-    <textarea id="comentario"></textarea>
-    <button onclick="salvarComentario()">Enviar</button>
-    <div id="listaComentarios"></div>
-  </div>
+        <div class="relative">
+          <div class="overflow-hidden rounded-[2.5rem] border border-white/70 bg-white p-4 shadow-2xl shadow-slate-200/70">
+            <img src="images/postura-correta.svg" alt="Ilustração de postura correta" class="h-full w-full rounded-[2rem] bg-sky-50 object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-2 flex max-w-xs items-center gap-4 rounded-[1.75rem] border border-surface-container-highest bg-white p-4 shadow-xl sm:-left-8 sm:p-5">
+            <img src="images/postura-incorreta.svg" alt="Miniatura de postura incorreta" class="h-20 w-20 rounded-2xl border border-error/10 bg-rose-50 object-cover">
+            <div>
+              <p class="text-sm font-bold text-on-surface">Evite a curvatura em C</p>
+              <p class="text-xs leading-relaxed text-on-surface-variant">Pescoço projetado e ombros fechados aumentam a tensão cervical.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section id="educacao" class="bg-surface-container-low py-24">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8">
+        <div class="mx-auto mb-16 max-w-3xl text-center">
+          <h2 class="text-4xl font-bold text-on-surface">Educação postural sem complicação</h2>
+          <p class="mt-4 text-base leading-relaxed text-on-surface-variant sm:text-lg">Veja a diferença entre um alinhamento saudável e os padrões que mais geram desconforto no dia a dia.</p>
+        </div>
 
-<script>
-  // VULNERABILIDADE INTENCIONAL: XSS
-  function salvarComentario() {
-    const comentario = document.getElementById('comentario').value;
-    document.getElementById('listaComentarios').innerHTML += '<p>' + comentario + '</p>';
-  }
+        <div id="alinhamento" class="grid gap-10 md:grid-cols-2">
+          <article class="rounded-[2rem] border border-primary/10 bg-surface-container-lowest p-8 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] transition-all hover:-translate-y-1 hover:border-primary/20">
+            <div class="mb-8 overflow-hidden rounded-3xl bg-sky-50 p-4">
+              <img src="images/postura-correta.svg" alt="Ilustração de postura correta" class="h-full w-full rounded-2xl object-cover">
+            </div>
+            <div class="mb-4 flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">check_circle</span>
+              <h3 class="text-2xl font-bold text-on-surface">Postura correta</h3>
+            </div>
+            <p class="mb-6 leading-relaxed text-on-surface-variant">Coluna com curvaturas naturais preservadas, ombros relaxados e pés estáveis no chão. O monitor deve acompanhar a linha dos olhos.</p>
+            <ul class="space-y-3 text-sm font-medium text-on-surface-variant">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Apoio lombar preservado</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Cotovelos em torno de 90 graus</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Visão alinhada com o topo da tela</li>
+            </ul>
+          </article>
 
-  // Lógica simples de resposta
-  function verificar() {
-    const resposta = document.getElementById('resposta').value;
-    if (resposta.toLowerCase().includes('reta')) {
-      document.getElementById('resultado').innerText = 'Correto!';
-    } else {
-      document.getElementById('resultado').innerText = 'Tente novamente.';
+          <article class="rounded-[2rem] border border-error/10 bg-surface-container-lowest p-8 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] transition-all hover:-translate-y-1 hover:border-error/20">
+            <div class="mb-8 overflow-hidden rounded-3xl bg-rose-50 p-4">
+              <img src="images/postura-incorreta.svg" alt="Ilustração de postura incorreta" class="h-full w-full rounded-2xl object-cover">
+            </div>
+            <div class="mb-4 flex items-center gap-3">
+              <span class="material-symbols-outlined text-error" style="font-variation-settings:'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">cancel</span>
+              <h3 class="text-2xl font-bold text-on-surface">Postura incorreta</h3>
+            </div>
+            <p class="mb-6 leading-relaxed text-on-surface-variant">Quando a cabeça avança, os ombros fecham e a lombar perde apoio, o corpo compensa com mais tensão no pescoço, nas costas e até na respiração.</p>
+            <ul class="space-y-3 text-sm font-medium text-on-surface-variant">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Cabeça inclinada para frente</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Ausência de apoio lombar</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Longos períodos sem ajuste da cadeira</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="mx-auto max-w-4xl px-6 py-24 sm:px-8">
+      <div class="relative overflow-hidden rounded-[2.5rem] bg-primary p-8 text-on-primary shadow-2xl sm:p-12">
+        <div class="pointer-events-none absolute right-0 top-0 opacity-10">
+          <span class="material-symbols-outlined text-[12rem] sm:text-[15rem]">psychology</span>
+        </div>
+        <div class="relative z-10">
+          <div class="mb-6 inline-block rounded-full bg-white/20 px-4 py-1 text-xs font-bold uppercase tracking-[0.25em]">Teste de conhecimento</div>
+          <h2 class="mb-3 text-3xl font-bold md:text-4xl">Qual a posição ideal do monitor?</h2>
+          <p class="mb-8 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">Escolha a opção que melhor representa o alinhamento recomendado para reduzir tensões cervicais e melhorar o conforto ao longo do dia.</p>
+
+          <div class="space-y-4">
+            <label class="block cursor-pointer">
+              <input type="radio" name="quiz" value="Abaixo da linha dos olhos" class="peer sr-only">
+              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">A</span>
+                <span class="text-lg font-medium">Abaixo da linha dos olhos</span>
+              </span>
+            </label>
+            <label class="block cursor-pointer">
+              <input type="radio" name="quiz" value="Topo da tela na altura dos olhos" class="peer sr-only">
+              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">B</span>
+                <span class="text-lg font-medium">Topo da tela na altura dos olhos</span>
+              </span>
+            </label>
+            <label class="block cursor-pointer">
+              <input type="radio" name="quiz" value="Acima da linha dos olhos" class="peer sr-only">
+              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">C</span>
+                <span class="text-lg font-medium">Acima da linha dos olhos</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <button type="button" onclick="verificar()" class="rounded-full bg-white px-10 py-4 font-bold text-primary shadow-xl transition-transform hover:scale-105">Verificar</button>
+            <div class="flex items-center gap-2 text-sm italic text-white/70">
+              <span class="material-symbols-outlined text-sm">info</span>
+              Ajustar o monitor ajuda a aliviar a tensão cervical.
+            </div>
+          </div>
+
+          <p id="resultado" class="mt-6 hidden rounded-2xl border border-white/20 bg-white/15 px-5 py-4 text-sm font-semibold text-white"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comunidade" class="bg-background py-24">
+      <div class="mx-auto max-w-3xl px-6 sm:px-8">
+        <div class="mb-12 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 class="text-3xl font-bold text-on-surface">Comunidade</h2>
+            <p class="mt-2 text-on-surface-variant">Compartilhe progresso, dúvidas e ajustes que funcionaram para você.</p>
+          </div>
+          <span class="inline-flex w-fit items-center rounded-full bg-primary-container px-3 py-1 text-sm font-medium text-on-primary-container">Atividade em tempo real</span>
+        </div>
+
+        <div class="mb-12 rounded-[2rem] bg-surface-container-low p-6 shadow-sm">
+          <div class="flex gap-4">
+            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white">U</div>
+            <div class="flex-grow">
+              <textarea id="comentario" class="h-24 w-full resize-none rounded-2xl border border-outline-variant/20 bg-white/70 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-primary" placeholder="Compartilhe seu progresso ou tire uma dúvida..."></textarea>
+              <div class="mt-4 flex flex-col gap-3 border-t border-outline-variant/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex gap-2">
+                  <span class="inline-flex items-center rounded-full bg-white px-3 py-2 text-xs font-medium text-on-surface-variant">Postura</span>
+                  <span class="inline-flex items-center rounded-full bg-white px-3 py-2 text-xs font-medium text-on-surface-variant">Ergonomia</span>
+                </div>
+                <button type="button" onclick="salvarComentario()" class="rounded-full bg-primary px-6 py-2 font-semibold text-on-primary transition-transform hover:scale-105 hover:bg-primary-dim">Postar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="listaComentarios" class="space-y-8"></div>
+
+        <div class="space-y-8">
+          <div class="flex gap-4 group">
+            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-100 font-bold text-sky-800 shadow-sm">A</div>
+            <div class="flex-grow">
+              <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
+                <div class="mb-2 flex items-center justify-between">
+                  <span class="font-bold text-on-surface">Ana Beatriz</span>
+                  <span class="text-xs text-on-surface-variant">há 2 horas</span>
+                </div>
+                <p class="text-sm leading-relaxed text-on-surface-variant">Segui as dicas do monitor hoje e já senti diferença no final do dia. Menos dor de cabeça e menos tensão nos ombros.</p>
+              </div>
+              <div class="ml-2 mt-2 flex gap-6">
+                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>12</button>
+                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4 group">
+            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 shadow-sm">M</div>
+            <div class="flex-grow">
+              <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
+                <div class="mb-2 flex items-center justify-between">
+                  <span class="font-bold text-on-surface">Marcos Silva</span>
+                  <span class="text-xs text-on-surface-variant">há 5 horas</span>
+                </div>
+                <p class="text-sm leading-relaxed text-on-surface-variant">Alguém tem indicação de ajuste simples para cadeira de escritório? Estou tentando melhorar minha estação de trabalho em casa.</p>
+              </div>
+              <div class="ml-2 mt-2 flex gap-6">
+                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>4</button>
+                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-100 bg-slate-50 py-12">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 sm:px-8 md:flex-row">
+      <div class="space-y-2 text-center md:text-left">
+        <span class="block text-xl font-bold text-sky-900">Clinical Serenity</span>
+        <p class="text-sm leading-relaxed text-slate-500">Projeto educativo para estudo de programação e segurança. © 2026 Clinical Serenity Education.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+        <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Privacy Policy</a>
+        <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Terms of Service</a>
+        <a href="#comunidade" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Contact Support</a>
+        <a href="#educacao" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Medical Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // VULNERABILIDADE INTENCIONAL: inserção insegura de comentários
+    function salvarComentario() {
+      const campoComentario = document.getElementById('comentario');
+      const comentario = campoComentario.value.trim();
+      if (!comentario) {
+        return;
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const nomeUsuario = params.get('nome') || 'Usuário';
+      const inicial = nomeUsuario.trim().charAt(0).toUpperCase() || 'U';
+      const novoComentario = `
+        <div class="flex gap-4 group">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white shadow-sm">${inicial}</div>
+          <div class="flex-grow">
+            <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
+              <div class="mb-2 flex items-center justify-between">
+                <span class="font-bold text-on-surface">${nomeUsuario}</span>
+                <span class="text-xs text-on-surface-variant">agora</span>
+              </div>
+              <p class="text-sm leading-relaxed text-on-surface-variant">${comentario}</p>
+            </div>
+            <div class="ml-2 mt-2 flex gap-6">
+              <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>0</button>
+              <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
+            </div>
+          </div>
+        </div>`;
+
+      const listaComentarios = document.getElementById('listaComentarios');
+      listaComentarios.innerHTML = novoComentario + listaComentarios.innerHTML;
+      campoComentario.value = '';
     }
-  }
 
-  // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
-  const params = new URLSearchParams(window.location.search);
-  const nome = params.get('nome');
-  if (nome) {
-    document.body.innerHTML += '<h3>Bem-vindo, ' + nome + '</h3>';
-  }
-</script>
+    function verificar() {
+      const respostaSelecionada = document.querySelector('input[name="quiz"]:checked');
+      const resultado = document.getElementById('resultado');
+      resultado.classList.remove('hidden');
 
+      if (!respostaSelecionada) {
+        resultado.textContent = 'Selecione uma alternativa antes de verificar.';
+        return;
+      }
+
+      if (respostaSelecionada.value === 'Topo da tela na altura dos olhos') {
+        resultado.textContent = 'Correto! O topo da tela deve ficar na altura dos olhos para reduzir a sobrecarga cervical.';
+      } else {
+        resultado.textContent = 'Tente novamente. Ajuste ideal: topo da tela na altura dos olhos.';
+      }
+    }
+
+    // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get('nome');
+    if (nome) {
+      const faixaBoasVindas = document.getElementById('boasVindas');
+      faixaBoasVindas.firstElementChild.innerHTML = 'Olá, <strong>' + nome + '</strong>. Continue explorando os módulos de postura e participe da comunidade.';
+      faixaBoasVindas.classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
