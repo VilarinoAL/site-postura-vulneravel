@@ -109,6 +109,7 @@
         <a href="#educacao" class="font-semibold text-sky-700 transition-colors hover:text-sky-900">Educação</a>
         <a href="#quiz" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Quiz</a>
         <a href="#alinhamento" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Alinhamento</a>
+        <a href="#whatsapp" class="font-medium text-slate-600 transition-colors hover:text-sky-700">WhatsApp</a>
         <a href="#comunidade" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Comunidade</a>
       </div>
       <a href="#quiz" class="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-on-primary transition-transform hover:scale-105 hover:bg-primary-dim">Inicie</a>
@@ -261,6 +262,27 @@
       </div>
     </section>
 
+    <section id="whatsapp" class="bg-surface-container-low py-24">
+      <div class="mx-auto max-w-3xl px-6 sm:px-8">
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl font-bold text-on-surface">Fale conosco pelo WhatsApp</h2>
+          <p class="mt-3 text-on-surface-variant">Preencha seus dados e abra uma mensagem pronta no WhatsApp com sua solicitação.</p>
+        </div>
+
+        <div class="space-y-6 rounded-[2rem] bg-white p-8 shadow-xl shadow-slate-200/70">
+          <input id="nome" type="text" placeholder="Seu nome" class="w-full rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary">
+
+          <input id="telefone" type="text" placeholder="Seu telefone" class="w-full rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary">
+
+          <textarea id="mensagem" placeholder="O que você deseja?" class="h-32 w-full resize-none rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+
+          <button onclick="enviarWhatsApp()" class="w-full rounded-full bg-green-500 py-4 font-bold text-white transition-all hover:bg-green-600">
+            Enviar no WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section id="comunidade" class="bg-background py-24">
       <div class="mx-auto max-w-3xl px-6 sm:px-8">
         <div class="mb-12 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -337,7 +359,7 @@
       <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
         <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Privacy Policy</a>
         <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Terms of Service</a>
-        <a href="#comunidade" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Contact Support</a>
+        <a href="#whatsapp" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Contact Support</a>
         <a href="#educacao" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Medical Disclaimer</a>
       </div>
     </div>
@@ -395,12 +417,36 @@
       }
     }
 
+    function enviarWhatsApp() {
+      const campoNome = document.getElementById('nome');
+      const campoTelefone = document.getElementById('telefone');
+      const campoMensagem = document.getElementById('mensagem');
+      const nomeContato = campoNome.value.trim();
+      const telefoneContato = campoTelefone.value.trim();
+      const mensagemContato = campoMensagem.value.trim();
+
+      if (!nomeContato || !telefoneContato || !mensagemContato) {
+        alert('Preencha nome, telefone e mensagem antes de continuar.');
+        return;
+      }
+
+      const texto = [
+        'Olá! Vim pelo site Arruma a coluna.',
+        '',
+        'Nome: ' + nomeContato,
+        'Telefone: ' + telefoneContato,
+        'Mensagem: ' + mensagemContato
+      ].join('\n');
+
+      window.open('https://wa.me/?text=' + encodeURIComponent(texto), '_blank');
+    }
+
     // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
     const params = new URLSearchParams(window.location.search);
-    const nome = params.get('nome');
-    if (nome) {
+    const nomeVisitante = params.get('nome');
+    if (nomeVisitante) {
       const faixaBoasVindas = document.getElementById('boasVindas');
-      faixaBoasVindas.firstElementChild.innerHTML = 'Olá, <strong>' + nome + '</strong>. Continue explorando os módulos de postura e participe da comunidade.';
+      faixaBoasVindas.firstElementChild.innerHTML = 'Olá, <strong>' + nomeVisitante + '</strong>. Continue explorando os módulos de postura e participe da comunidade.';
       faixaBoasVindas.classList.remove('hidden');
     }
   </script>
