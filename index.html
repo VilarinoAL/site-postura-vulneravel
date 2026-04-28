@@ -418,27 +418,22 @@
     }
 
     function enviarWhatsApp() {
-      const campoNome = document.getElementById('nome');
-      const campoTelefone = document.getElementById('telefone');
-      const campoMensagem = document.getElementById('mensagem');
-      const nomeContato = campoNome.value.trim();
-      const telefoneContato = campoTelefone.value.trim();
-      const mensagemContato = campoMensagem.value.trim();
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const mensagem = document.getElementById("mensagem").value;
 
-      if (!nomeContato || !telefoneContato || !mensagemContato) {
-        alert('Preencha nome, telefone e mensagem antes de continuar.');
+      if (!nome || !telefone || !mensagem) {
+        alert("Preencha todos os campos!");
         return;
       }
 
-      const texto = [
-        'Olá! Vim pelo site Arruma a coluna.',
-        '',
-        'Nome: ' + nomeContato,
-        'Telefone: ' + telefoneContato,
-        'Mensagem: ' + mensagemContato
-      ].join('\n');
+      const texto = `Olá, meu nome é ${nome}.
+Telefone: ${telefone}.
+Gostaria de: ${mensagem}`;
 
-      window.open('https://wa.me/?text=' + encodeURIComponent(texto), '_blank');
+      const url = "https://wa.me/5577998549552?text=" + encodeURIComponent(texto);
+
+      window.open(url, "_blank");
     }
 
     // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
