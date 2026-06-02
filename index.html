@@ -2,537 +2,1275 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Como arrumar a minha coluna | Clinical Serenity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alessandro Vilarino | Designer Grafico</title>
+  <meta
+    name="description"
+    content="Portfolio de Alessandro Vilarino com servicos de identidade visual, artes para social media, logotipos e materiais impressos."
+  >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "surface-variant": "#dce4e6",
-            "primary-fixed-dim": "#2bb1ee",
-            "surface-dim": "#d4dbde",
-            "tertiary-fixed": "#c8cffe",
-            "surface-container-lowest": "#ffffff",
-            "surface-container-high": "#e3e9eb",
-            "secondary-fixed": "#cee6f8",
-            tertiary: "#555d85",
-            "surface-container": "#eaeff0",
-            "on-surface-variant": "#596063",
-            "primary-dim": "#00597d",
-            "tertiary-dim": "#495178",
-            "on-tertiary-fixed-variant": "#474e76",
-            "on-tertiary-fixed": "#2a3257",
-            "tertiary-fixed-dim": "#bac1ef",
-            "error-container": "#fa746f",
-            "on-tertiary-container": "#3d456c",
-            "on-primary-container": "#00374e",
-            "on-secondary-fixed-variant": "#485e6e",
-            "surface-tint": "#00668e",
-            "on-secondary-container": "#3f5464",
-            background: "#f8fafb",
-            "primary-fixed": "#41befd",
-            error: "#a83836",
-            primary: "#00668e",
-            "on-primary": "#f5f9ff",
-            "on-error-container": "#6e0a12",
-            "primary-container": "#41befd",
-            "secondary-container": "#cee6f8",
-            "on-surface": "#2c3436",
-            "surface-bright": "#f8fafb",
-            "tertiary-container": "#c8cffe",
-            "on-primary-fixed-variant": "#00405b",
-            "secondary-fixed-dim": "#c0d7ea",
-            "surface-container-highest": "#dce4e6",
-            "on-tertiary": "#faf8ff",
-            "secondary-dim": "#405665",
-            "inverse-surface": "#0b0f10",
-            "inverse-primary": "#41befd",
-            surface: "#f8fafb",
-            "error-dim": "#67040d",
-            "inverse-on-surface": "#9a9d9e",
-            "on-secondary": "#f5f9ff",
-            "surface-container-low": "#f0f4f6",
-            "on-primary-fixed": "#001d2c",
-            "on-secondary-fixed": "#2c4250",
-            "outline-variant": "#acb3b6",
-            "on-background": "#2c3436",
-            outline: "#747c7e",
-            "on-error": "#fff7f6",
-            secondary: "#4c6271"
-          },
-          borderRadius: {
-            DEFAULT: "0.25rem",
-            lg: "0.5rem",
-            xl: "0.75rem",
-            full: "9999px"
-          },
-          fontFamily: {
-            headline: ["Manrope", "sans-serif"],
-            body: ["Inter", "sans-serif"],
-            label: ["Inter", "sans-serif"]
-          }
-        }
-      }
-    };
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #070b16;
+      --bg-soft: #0d1324;
+      --surface: rgba(16, 23, 41, 0.82);
+      --surface-strong: rgba(22, 31, 53, 0.96);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-highlight: rgba(255, 255, 255, 0.18);
+      --text: #f7f8fb;
+      --muted: #acb6cd;
+      --accent: #ff6b57;
+      --accent-strong: #ff8f6b;
+      --accent-secondary: #3ad5b9;
+      --accent-tertiary: #f5c86b;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --container: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8fafb;
-      color: #2c3436;
+      margin: 0;
+      min-width: 320px;
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255, 107, 87, 0.22), transparent 34%),
+        radial-gradient(circle at 85% 15%, rgba(58, 213, 185, 0.16), transparent 24%),
+        linear-gradient(180deg, #080c18 0%, #05070f 100%);
+      overflow-x: hidden;
     }
 
-    h1, h2, h3 {
-      font-family: 'Manrope', sans-serif;
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(24px);
     }
 
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    body::before {
+      top: 80px;
+      left: -120px;
+      width: 260px;
+      height: 260px;
+      background: rgba(255, 107, 87, 0.22);
+    }
+
+    body::after {
+      right: -140px;
+      bottom: 120px;
+      width: 320px;
+      height: 320px;
+      background: rgba(58, 213, 185, 0.16);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--container));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(22px);
+      background: rgba(7, 11, 22, 0.78);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-shell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .brand strong,
+    .section-title,
+    .hero-title,
+    .service-card h3,
+    .portfolio-card h3,
+    .about-card h2,
+    .contact-copy h2 {
+      font-family: "Sora", sans-serif;
+    }
+
+    .brand strong {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .brand span {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+    }
+
+    .button,
+    .button-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .button {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+      color: #fff;
+      box-shadow: 0 20px 40px rgba(255, 107, 87, 0.3);
+    }
+
+    .button:hover,
+    .button:focus-visible,
+    .button-outline:hover,
+    .button-outline:focus-visible,
+    .floating-whatsapp:hover,
+    .floating-whatsapp:focus-visible {
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+    }
+
+    .hero {
+      position: relative;
+      padding: 88px 0 44px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      color: #dbe4f7;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      box-shadow: 0 0 20px rgba(255, 107, 87, 0.6);
+    }
+
+    .hero-title {
+      margin: 24px 0 18px;
+      max-width: 11ch;
+      font-size: clamp(2.9rem, 6vw, 5.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-title span {
+      display: block;
+      color: var(--accent-strong);
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      margin: 0 0 34px;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .metric-card,
+    .hero-visual,
+    .service-card,
+    .portfolio-card,
+    .about-card,
+    .contact-card,
+    .contact-form {
+      position: relative;
+      border: 1px solid var(--card-border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+    }
+
+    .metric-card {
+      padding: 20px;
+      border-radius: 22px;
+    }
+
+    .metric-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: "Sora", sans-serif;
+      font-size: 1.45rem;
+    }
+
+    .metric-card span {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .hero-visual {
+      border-radius: var(--radius-xl);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: auto auto 16px 16px;
+      width: 132px;
+      height: 132px;
+      background: radial-gradient(circle, rgba(245, 200, 107, 0.2), transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-visual img {
+      border-radius: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .visual-badge {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(7, 11, 22, 0.72);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.28);
+    }
+
+    .visual-badge strong {
+      font-size: 1rem;
+    }
+
+    .visual-badge span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .visual-badge.top {
+      top: 26px;
+      right: -22px;
+    }
+
+    .visual-badge.bottom {
+      bottom: 22px;
+      left: -26px;
+    }
+
+    .section {
+      padding: 46px 0 28px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--accent-secondary);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .section-text {
+      max-width: 620px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      border-radius: 28px;
+      padding: 28px;
+      min-height: 230px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .service-card:hover,
+    .service-card:focus-within {
+      transform: translateY(-4px);
+      border-color: var(--card-highlight);
+    }
+
+    .service-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 22px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(255, 107, 87, 0.22), rgba(58, 213, 185, 0.2));
+      color: var(--text);
+      font-family: "Sora", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .service-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .portfolio-card {
+      border-radius: 30px;
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .portfolio-card:hover,
+    .portfolio-card:focus-within {
+      transform: translateY(-5px);
+      border-color: var(--card-highlight);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      aspect-ratio: 16 / 12;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .portfolio-body {
+      padding: 24px;
+    }
+
+    .portfolio-body h3 {
+      margin: 0 0 10px;
+      font-size: 1.34rem;
+      letter-spacing: -0.03em;
+    }
+
+    .portfolio-body p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #d7e0f5;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .about-card,
+    .contact-card,
+    .contact-form {
+      border-radius: 32px;
+      padding: 32px;
+    }
+
+    .about-card p,
+    .contact-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .about-card + .about-card {
+      display: grid;
+      gap: 18px;
+      align-content: center;
+      background:
+        linear-gradient(180deg, rgba(255, 107, 87, 0.12), rgba(58, 213, 185, 0.08)),
+        var(--surface-strong);
+    }
+
+    .about-card h2 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      letter-spacing: -0.04em;
+    }
+
+    .about-highlight {
+      display: grid;
+      gap: 14px;
+    }
+
+    .about-highlight div {
+      padding: 18px 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .about-highlight strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: "Sora", sans-serif;
+      font-size: 1.05rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background:
+        radial-gradient(circle at top right, rgba(245, 200, 107, 0.16), transparent 34%),
+        linear-gradient(180deg, rgba(255, 107, 87, 0.08), rgba(58, 213, 185, 0.04)),
+        var(--surface-strong);
+    }
+
+    .contact-copy h2 {
+      margin: 14px 0 16px;
+      font-size: clamp(2rem, 3.4vw, 2.8rem);
+      letter-spacing: -0.04em;
+    }
+
+    .contact-points {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .contact-points div {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px 18px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .contact-points strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .contact-points span {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .point-badge {
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      font-family: "Sora", sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .contact-form h3 {
+      margin: 0 0 8px;
+      font-family: "Sora", sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.03em;
+    }
+
+    .contact-form p {
+      margin: 0 0 26px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .field {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      color: #dde5f7;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #7f8aa5;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: rgba(255, 143, 107, 0.7);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 0 4px rgba(255, 107, 87, 0.12);
+    }
+
+    .field textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .form-note,
+    .form-feedback {
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+
+    .form-feedback {
+      min-height: 24px;
+    }
+
+    .form-feedback.error {
+      color: #ff9988;
+    }
+
+    .form-feedback.success {
+      color: #79e7d1;
+    }
+
+    .site-footer {
+      padding: 42px 0 86px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 60px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #25d366 0%, #1cbd59 100%);
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 22px 42px rgba(37, 211, 102, 0.32);
+    }
+
+    .floating-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.18);
+      font-size: 1rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .visual-badge.top {
+        right: 18px;
+      }
+
+      .visual-badge.bottom {
+        left: 18px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-shell {
+        flex-wrap: wrap;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 12px 0 4px;
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero-metrics,
+      .services-grid,
+      .portfolio-grid,
+      .field-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 24px;
+      }
+
+      .about-card,
+      .contact-card,
+      .contact-form {
+        padding: 26px;
+      }
+
+      .floating-whatsapp span:last-child {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .button,
+      .button-outline,
+      .floating-whatsapp,
+      .service-card,
+      .portfolio-card {
+        transition: none;
+      }
     }
   </style>
 </head>
-<body class="bg-background text-on-background antialiased">
-  <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-white/75 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] backdrop-blur-xl">
-    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8">
-      <a href="#topo" class="text-xl font-extrabold tracking-tight text-sky-800 sm:text-2xl">Arruma a coluna</a>
-      <div class="hidden items-center gap-8 md:flex">
-        <a href="#educacao" class="font-semibold text-sky-700 transition-colors hover:text-sky-900">Educação</a>
-        <a href="#quiz" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Quiz</a>
-        <a href="#alinhamento" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Alinhamento</a>
-        <a href="#whatsapp" class="font-medium text-slate-600 transition-colors hover:text-sky-700">WhatsApp</a>
-        <a href="#comunidade" class="font-medium text-slate-600 transition-colors hover:text-sky-700">Comunidade</a>
-      </div>
-      <a href="#quiz" class="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-on-primary transition-transform hover:scale-105 hover:bg-primary-dim">Inicie</a>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a href="#inicio" class="brand" aria-label="Ir para o topo">
+        <strong>Alessandro Vilarino</strong>
+        <span>Designer Grafico</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+        Menu
+      </button>
+
+      <nav id="menu-principal" class="nav-links" aria-label="Principal">
+        <a href="#servicos">Servicos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="button nav-cta" href="https://wa.me/5577998549552?text=Ol%C3%A1%2C%20Alessandro.%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+        Solicitar orcamento
+      </a>
     </div>
-  </nav>
+  </header>
 
-  <main id="topo" class="pt-20">
-    <div id="boasVindas" class="hidden border-b border-primary/10 bg-primary/5">
-      <div class="mx-auto max-w-7xl px-6 py-3 text-sm font-medium text-primary sm:px-8"></div>
-    </div>
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Identidade visual, social media e materiais impressos</span>
+          <h1 class="hero-title">
+            Designer grafico
+            <span>para marcas que querem se destacar</span>
+          </h1>
+          <p class="hero-copy">
+            Crio artes profissionais, identidades visuais consistentes e pecas para social media que ajudam sua marca a transmitir valor, presenca e confianca em cada ponto de contato.
+          </p>
 
-    <section class="relative overflow-hidden pb-24 pt-16 md:pb-36 md:pt-24">
-      <div class="absolute right-0 top-0 -z-10 h-full w-1/2 bg-gradient-to-l from-secondary-container/40 to-transparent"></div>
-      <div class="mx-auto grid max-w-7xl gap-12 px-6 sm:px-8 md:grid-cols-2 md:items-center">
-        <div class="space-y-8">
-          <div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
-            <span class="material-symbols-outlined text-base">health_and_safety</span>
-            Saúde, ergonomia e prevenção
+          <div class="hero-actions">
+            <a class="button" href="https://wa.me/5577998549552?text=Ol%C3%A1%2C%20Alessandro.%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+              Solicitar orcamento no WhatsApp
+            </a>
+            <a class="button-outline" href="#portfolio">Ver portfolio</a>
           </div>
-          <div class="space-y-6">
-            <h1 class="max-w-xl text-5xl font-extrabold leading-tight tracking-tight text-on-surface md:text-7xl">
-              Como arrumar a minha <span class="text-primary">coluna</span>
-            </h1>
-            <p class="max-w-xl text-lg leading-relaxed text-on-surface-variant md:text-xl">
-              Aprenda postura correta e cuide da sua saúde com orientações visuais simples, técnicas práticas e um quiz rápido para revisar os pontos mais importantes.
-            </p>
-          </div>
-          <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a href="#quiz" class="rounded-full bg-primary px-8 py-4 text-center text-lg font-bold text-on-primary shadow-lg shadow-primary/20 transition-transform hover:scale-105 hover:bg-primary-dim">Começar</a>
-            <a href="#educacao" class="rounded-full border border-primary/20 px-8 py-4 text-center font-bold text-primary transition-colors hover:bg-primary/5">Ver módulos</a>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-3">
-            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
-              <p class="text-2xl font-extrabold text-on-surface">2 imagens</p>
-              <p class="text-sm text-on-surface-variant">Comparação visual local</p>
-            </div>
-            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
-              <p class="text-2xl font-extrabold text-on-surface">1 quiz</p>
-              <p class="text-sm text-on-surface-variant">Validação imediata</p>
-            </div>
-            <div class="rounded-3xl border border-surface-container-highest bg-white/80 p-4 shadow-sm">
-              <p class="text-2xl font-extrabold text-on-surface">Comunidade</p>
-              <p class="text-sm text-on-surface-variant">Comentários e troca de dicas</p>
-            </div>
+
+          <div class="hero-metrics">
+            <article class="metric-card">
+              <strong>Branding</strong>
+              <span>Direcao visual com conceito, tipografia e aplicacao coerente.</span>
+            </article>
+            <article class="metric-card">
+              <strong>Social</strong>
+              <span>Artes estrategicas para Instagram, campanhas e lancamentos.</span>
+            </article>
+            <article class="metric-card">
+              <strong>Print</strong>
+              <span>Materiais graficos prontos para impressao com acabamento profissional.</span>
+            </article>
           </div>
         </div>
 
-        <div class="relative">
-          <div class="overflow-hidden rounded-[2.5rem] border border-white/70 bg-white p-4 shadow-2xl shadow-slate-200/70">
-            <img src="images/postura-correta.svg" alt="Ilustração de postura correta" class="h-full w-full rounded-[2rem] bg-sky-50 object-cover">
+        <div class="hero-visual reveal">
+          <div class="visual-badge top">
+            <strong>Visual premium</strong>
+            <span>Layouts fortes, elegantes e pensados para conversao.</span>
           </div>
-          <div class="absolute -bottom-6 -left-2 flex max-w-xs items-center gap-4 rounded-[1.75rem] border border-surface-container-highest bg-white p-4 shadow-xl sm:-left-8 sm:p-5">
-            <img src="images/postura-incorreta.svg" alt="Miniatura de postura incorreta" class="h-20 w-20 rounded-2xl border border-error/10 bg-rose-50 object-cover">
-            <div>
-              <p class="text-sm font-bold text-on-surface">Evite a curvatura em C</p>
-              <p class="text-xs leading-relaxed text-on-surface-variant">Pescoço projetado e ombros fechados aumentam a tensão cervical.</p>
-            </div>
+          <div class="visual-badge bottom">
+            <strong>Atendimento direto</strong>
+            <span>Briefing e orcamento rapido pelo WhatsApp.</span>
           </div>
+          <img src="images/hero-portfolio.svg" alt="Composicao visual de trabalhos de design grafico">
         </div>
       </div>
     </section>
 
-    <section id="educacao" class="bg-surface-container-low py-24">
-      <div class="mx-auto max-w-7xl px-6 sm:px-8">
-        <div class="mx-auto mb-16 max-w-3xl text-center">
-          <h2 class="text-4xl font-bold text-on-surface">Educação postural sem complicação</h2>
-          <p class="mt-4 text-base leading-relaxed text-on-surface-variant sm:text-lg">Veja a diferença entre um alinhamento saudável e os padrões que mais geram desconforto no dia a dia.</p>
-        </div>
-
-        <div id="alinhamento" class="grid gap-10 md:grid-cols-2">
-          <article class="rounded-[2rem] border border-primary/10 bg-surface-container-lowest p-8 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] transition-all hover:-translate-y-1 hover:border-primary/20">
-            <div class="mb-8 overflow-hidden rounded-3xl bg-sky-50 p-4">
-              <img src="images/postura-correta.svg" alt="Ilustração de postura correta" class="h-full w-full rounded-2xl object-cover">
-            </div>
-            <div class="mb-4 flex items-center gap-3">
-              <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">check_circle</span>
-              <h3 class="text-2xl font-bold text-on-surface">Postura correta</h3>
-            </div>
-            <p class="mb-6 leading-relaxed text-on-surface-variant">Coluna com curvaturas naturais preservadas, ombros relaxados e pés estáveis no chão. O monitor deve acompanhar a linha dos olhos.</p>
-            <ul class="space-y-3 text-sm font-medium text-on-surface-variant">
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Apoio lombar preservado</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Cotovelos em torno de 90 graus</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">check</span>Visão alinhada com o topo da tela</li>
-            </ul>
-          </article>
-
-          <article class="rounded-[2rem] border border-error/10 bg-surface-container-lowest p-8 shadow-[0px_20px_40px_rgba(44,52,54,0.06)] transition-all hover:-translate-y-1 hover:border-error/20">
-            <div class="mb-8 overflow-hidden rounded-3xl bg-rose-50 p-4">
-              <img src="images/postura-incorreta.svg" alt="Ilustração de postura incorreta" class="h-full w-full rounded-2xl object-cover">
-            </div>
-            <div class="mb-4 flex items-center gap-3">
-              <span class="material-symbols-outlined text-error" style="font-variation-settings:'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">cancel</span>
-              <h3 class="text-2xl font-bold text-on-surface">Postura incorreta</h3>
-            </div>
-            <p class="mb-6 leading-relaxed text-on-surface-variant">Quando a cabeça avança, os ombros fecham e a lombar perde apoio, o corpo compensa com mais tensão no pescoço, nas costas e até na respiração.</p>
-            <ul class="space-y-3 text-sm font-medium text-on-surface-variant">
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Cabeça inclinada para frente</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Ausência de apoio lombar</li>
-              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-error text-lg">close</span>Longos períodos sem ajuste da cadeira</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="quiz" class="mx-auto max-w-4xl px-6 py-24 sm:px-8">
-      <div class="relative overflow-hidden rounded-[2.5rem] bg-primary p-8 text-on-primary shadow-2xl sm:p-12">
-        <div class="pointer-events-none absolute right-0 top-0 opacity-10">
-          <span class="material-symbols-outlined text-[12rem] sm:text-[15rem]">psychology</span>
-        </div>
-        <div class="relative z-10">
-          <div class="mb-6 inline-block rounded-full bg-white/20 px-4 py-1 text-xs font-bold uppercase tracking-[0.25em]">Teste de conhecimento</div>
-          <h2 class="mb-3 text-3xl font-bold md:text-4xl">Qual a posição ideal do monitor?</h2>
-          <p class="mb-8 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">Escolha a opção que melhor representa o alinhamento recomendado para reduzir tensões cervicais e melhorar o conforto ao longo do dia.</p>
-
-          <div class="space-y-4">
-            <label class="block cursor-pointer">
-              <input type="radio" name="quiz" value="Abaixo da linha dos olhos" class="peer sr-only">
-              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
-                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">A</span>
-                <span class="text-lg font-medium">Abaixo da linha dos olhos</span>
-              </span>
-            </label>
-            <label class="block cursor-pointer">
-              <input type="radio" name="quiz" value="Topo da tela na altura dos olhos" class="peer sr-only">
-              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
-                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">B</span>
-                <span class="text-lg font-medium">Topo da tela na altura dos olhos</span>
-              </span>
-            </label>
-            <label class="block cursor-pointer">
-              <input type="radio" name="quiz" value="Acima da linha dos olhos" class="peer sr-only">
-              <span class="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition-all peer-checked:border-white peer-checked:bg-white/20 hover:bg-white/20">
-                <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-on-primary text-xs font-bold peer-checked:bg-on-primary peer-checked:text-primary">C</span>
-                <span class="text-lg font-medium">Acima da linha dos olhos</span>
-              </span>
-            </label>
-          </div>
-
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <button type="button" onclick="verificar()" class="rounded-full bg-white px-10 py-4 font-bold text-primary shadow-xl transition-transform hover:scale-105">Verificar</button>
-            <div class="flex items-center gap-2 text-sm italic text-white/70">
-              <span class="material-symbols-outlined text-sm">info</span>
-              Ajustar o monitor ajuda a aliviar a tensão cervical.
-            </div>
-          </div>
-
-          <p id="resultado" class="mt-6 hidden rounded-2xl border border-white/20 bg-white/15 px-5 py-4 text-sm font-semibold text-white"></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="whatsapp" class="bg-surface-container-low py-24">
-      <div class="mx-auto max-w-3xl px-6 sm:px-8">
-        <div class="mb-10 text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-current">
-              <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.55 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.27-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.48 0 9.93-4.45 9.93-9.93a9.86 9.86 0 0 0-2.92-6.99Zm-7.02 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.22 8.22 0 0 1-1.27-4.35c0-4.53 3.69-8.22 8.23-8.22a8.17 8.17 0 0 1 5.83 2.42 8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.22 8.23Zm4.51-6.16c-.25-.13-1.47-.73-1.7-.81-.23-.09-.4-.13-.57.12-.16.24-.65.8-.8.97-.14.16-.29.18-.53.06-.25-.13-1.04-.38-1.98-1.21-.73-.66-1.22-1.47-1.37-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44l-.49-.01c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.02 0 1.19.87 2.35.99 2.51.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31Z"/>
-            </svg>
-            Atendimento rápido
-          </span>
-          <h2 class="mt-4 text-3xl font-bold text-on-surface">Fale conosco pelo WhatsApp</h2>
-          <p class="mt-3 text-on-surface-variant">Preencha seus dados e abra uma mensagem pronta no WhatsApp com sua solicitação.</p>
-        </div>
-
-        <div class="overflow-hidden rounded-[2rem] bg-white shadow-xl shadow-slate-200/70 ring-1 ring-slate-100">
-          <div class="bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-5 text-white sm:px-8">
-            <div class="flex items-center gap-3">
-              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15">
-                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-current">
-                  <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.55 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.27-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.48 0 9.93-4.45 9.93-9.93a9.86 9.86 0 0 0-2.92-6.99Zm-7.02 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.22 8.22 0 0 1-1.27-4.35c0-4.53 3.69-8.22 8.23-8.22a8.17 8.17 0 0 1 5.83 2.42 8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.22 8.23Zm4.51-6.16c-.25-.13-1.47-.73-1.7-.81-.23-.09-.4-.13-.57.12-.16.24-.65.8-.8.97-.14.16-.29.18-.53.06-.25-.13-1.04-.38-1.98-1.21-.73-.66-1.22-1.47-1.37-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44l-.49-.01c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.02 0 1.19.87 2.35.99 2.51.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31Z"/>
-                </svg>
-              </span>
-              <div>
-                <p class="text-lg font-bold">Converse direto conosco</p>
-                <p class="text-sm text-white/85">Número fixo: 55 77 99854-9552</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="space-y-6 p-6 sm:p-8">
-            <div class="grid gap-6 sm:grid-cols-2">
-              <label class="block">
-                <span class="mb-2 block text-sm font-semibold text-on-surface">Nome</span>
-                <input id="nome" type="text" placeholder="Seu nome" autocomplete="name" class="w-full rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary">
-              </label>
-
-              <label class="block">
-                <span class="mb-2 block text-sm font-semibold text-on-surface">Telefone</span>
-                <input id="telefone" type="text" placeholder="Somente números com DDD" inputmode="numeric" autocomplete="tel" maxlength="11" class="w-full rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary">
-                <span class="mt-2 block text-xs text-on-surface-variant">Use 10 ou 11 dígitos brasileiros, por exemplo: 77998549552</span>
-              </label>
-            </div>
-
-            <label class="block">
-              <span class="mb-2 block text-sm font-semibold text-on-surface">Mensagem</span>
-              <textarea id="mensagem" placeholder="O que você deseja?" class="h-32 w-full resize-none rounded-xl border border-gray-200 p-4 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-            </label>
-
-            <button type="button" onclick="enviarWhatsApp()" class="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-4 font-bold text-white shadow-[0_18px_30px_rgba(37,211,102,0.28)] transition-all hover:-translate-y-0.5 hover:bg-[#1ebe5d] focus:outline-none focus:ring-4 focus:ring-green-200">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
-                <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.55 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.27-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.48 0 9.93-4.45 9.93-9.93a9.86 9.86 0 0 0-2.92-6.99Zm-7.02 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.22 8.22 0 0 1-1.27-4.35c0-4.53 3.69-8.22 8.23-8.22a8.17 8.17 0 0 1 5.83 2.42 8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.22 8.23Zm4.51-6.16c-.25-.13-1.47-.73-1.7-.81-.23-.09-.4-.13-.57.12-.16.24-.65.8-.8.97-.14.16-.29.18-.53.06-.25-.13-1.04-.38-1.98-1.21-.73-.66-1.22-1.47-1.37-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44l-.49-.01c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.02 0 1.19.87 2.35.99 2.51.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31Z"/>
-              </svg>
-              Enviar no WhatsApp
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="comunidade" class="bg-background py-24">
-      <div class="mx-auto max-w-3xl px-6 sm:px-8">
-        <div class="mb-12 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head reveal">
           <div>
-            <h2 class="text-3xl font-bold text-on-surface">Comunidade</h2>
-            <p class="mt-2 text-on-surface-variant">Compartilhe progresso, dúvidas e ajustes que funcionaram para você.</p>
+            <span class="section-kicker">Servicos</span>
+            <h2 class="section-title">Design profissional para fortalecer sua presenca visual</h2>
           </div>
-          <span class="inline-flex w-fit items-center rounded-full bg-primary-container px-3 py-1 text-sm font-medium text-on-primary-container">Atividade em tempo real</span>
+          <p class="section-text">
+            Desenvolvo pecas digitais e impressas com foco em clareza, impacto e identidade para negocios, profissionais e marcas pessoais.
+          </p>
         </div>
 
-        <div class="mb-12 rounded-[2rem] bg-surface-container-low p-6 shadow-sm">
-          <div class="flex gap-4">
-            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white">U</div>
-            <div class="flex-grow">
-              <textarea id="comentario" class="h-24 w-full resize-none rounded-2xl border border-outline-variant/20 bg-white/70 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-primary" placeholder="Compartilhe seu progresso ou tire uma dúvida..."></textarea>
-              <div class="mt-4 flex flex-col gap-3 border-t border-outline-variant/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
-                <div class="flex gap-2">
-                  <span class="inline-flex items-center rounded-full bg-white px-3 py-2 text-xs font-medium text-on-surface-variant">Postura</span>
-                  <span class="inline-flex items-center rounded-full bg-white px-3 py-2 text-xs font-medium text-on-surface-variant">Ergonomia</span>
-                </div>
-                <button type="button" onclick="salvarComentario()" class="rounded-full bg-primary px-6 py-2 font-semibold text-on-primary transition-transform hover:scale-105 hover:bg-primary-dim">Postar</button>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">ID</div>
+            <h3>Identidade visual</h3>
+            <p>Sistema visual para posicionar sua marca com personalidade, consistencia e memorabilidade.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">SM</div>
+            <h3>Artes para Instagram</h3>
+            <p>Posts, carrosseis, capas e criativos com visual estrategico para social media.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">CV</div>
+            <h3>Cartao de visita</h3>
+            <p>Materiais elegantes e objetivos para apresentar sua marca com mais profissionalismo.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">LG</div>
+            <h3>Logotipo</h3>
+            <p>Criacao de marcas visuais com conceito, legibilidade e aplicacao versatil.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">FL</div>
+            <h3>Panfletos e flyers</h3>
+            <p>Pecas promocionais para divulgacao local, campanhas sazonais e lancamentos.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">PR</div>
+            <h3>Materiais para impressao</h3>
+            <p>Layouts prontos para grafica com atencao a formato, sangria, hierarquia e acabamento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Portfolio</span>
+            <h2 class="section-title">Pecas visuais que traduzem posicionamento e valor</h2>
+          </div>
+          <p class="section-text">
+            Alguns exemplos visuais de direcao criativa para branding, redes sociais e materiais impressos.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <img src="images/projeto-identidade.svg" alt="Mockup de identidade visual premium">
+            <div class="portfolio-body">
+              <h3>Identidade para marca autoral</h3>
+              <p>Estudo de branding com assinatura visual, paleta sofisticada e aplicacoes institucionais.</p>
+              <div class="tag-list">
+                <span class="tag">Branding</span>
+                <span class="tag">Logotipo</span>
+                <span class="tag">Papelaria</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <img src="images/projeto-social.svg" alt="Mockup de criativos para Instagram">
+            <div class="portfolio-body">
+              <h3>Campanha visual para Instagram</h3>
+              <p>Sequencia de criativos com consistencia estetica para social media e promocao digital.</p>
+              <div class="tag-list">
+                <span class="tag">Instagram</span>
+                <span class="tag">Carrossel</span>
+                <span class="tag">Anuncios</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <img src="images/projeto-impressos.svg" alt="Mockup de materiais impressos">
+            <div class="portfolio-body">
+              <h3>Materiais graficos promocionais</h3>
+              <p>Flyers, panfletos e pecas impressas planejadas para comunicar com clareza e impacto.</p>
+              <div class="tag-list">
+                <span class="tag">Flyers</span>
+                <span class="tag">Impressos</span>
+                <span class="tag">Campanha</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <article class="about-card reveal">
+          <span class="section-kicker">Sobre mim</span>
+          <h2>Criacao visual pensada para destacar sua marca em todos os formatos</h2>
+          <p>
+            Sou Alessandro Vilarino e trabalho com design grafico, criacao de pecas digitais e materiais impressos para negocios que desejam comunicar com mais forca e profissionalismo. Meu foco e transformar ideias em visuais claros, criativos e prontos para gerar percepcao de valor.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <div class="about-highlight">
+            <div>
+              <strong>Processo objetivo</strong>
+              <p>Entendo sua necessidade, organizo o conceito visual e entrego solucoes alinhadas ao seu posicionamento.</p>
+            </div>
+            <div>
+              <strong>Pecas para digital e impresso</strong>
+              <p>Artes para redes sociais, identidade visual, materiais promocionais e layouts prontos para grafica.</p>
+            </div>
+            <div>
+              <strong>Contato agil</strong>
+              <p>Atendimento direto via WhatsApp para briefing, alinhamento e solicitacao de orcamento.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <article class="contact-card contact-copy reveal">
+          <span class="section-kicker">Contato</span>
+          <h2>Vamos tirar sua ideia do papel com um visual marcante</h2>
+          <p>
+            Envie os detalhes do que voce deseja criar e abra automaticamente uma mensagem pronta no WhatsApp para continuar o atendimento.
+          </p>
+
+          <div class="contact-points">
+            <div>
+              <span class="point-badge">01</span>
+              <div>
+                <strong>Atendimento personalizado</strong>
+                <span>Ideal para identidade visual, social media, cartoes de visita, flyers e outros materiais.</span>
+              </div>
+            </div>
+            <div>
+              <span class="point-badge">02</span>
+              <div>
+                <strong>Resposta rapida</strong>
+                <span>Seu briefing chega direto no WhatsApp com nome, telefone e a descricao do projeto.</span>
+              </div>
+            </div>
+            <div>
+              <span class="point-badge">03</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+55 77 99854-9552</span>
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div id="listaComentarios" class="space-y-8"></div>
+        <article class="contact-form reveal">
+          <h3>Solicite um orcamento</h3>
+          <p>Preencha o formulario e continue a conversa no WhatsApp com uma mensagem pronta.</p>
 
-        <div class="space-y-8">
-          <div class="flex gap-4 group">
-            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-sky-100 font-bold text-sky-800 shadow-sm">A</div>
-            <div class="flex-grow">
-              <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
-                <div class="mb-2 flex items-center justify-between">
-                  <span class="font-bold text-on-surface">Ana Beatriz</span>
-                  <span class="text-xs text-on-surface-variant">há 2 horas</span>
-                </div>
-                <p class="text-sm leading-relaxed text-on-surface-variant">Segui as dicas do monitor hoje e já senti diferença no final do dia. Menos dor de cabeça e menos tensão nos ombros.</p>
+          <form id="whatsapp-form">
+            <div class="field-grid">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name">
               </div>
-              <div class="ml-2 mt-2 flex gap-6">
-                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>12</button>
-                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
+
+              <div class="field">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" placeholder="(77) 99999-9999" autocomplete="tel" inputmode="numeric">
               </div>
             </div>
-          </div>
 
-          <div class="flex gap-4 group">
-            <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 shadow-sm">M</div>
-            <div class="flex-grow">
-              <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
-                <div class="mb-2 flex items-center justify-between">
-                  <span class="font-bold text-on-surface">Marcos Silva</span>
-                  <span class="text-xs text-on-surface-variant">há 5 horas</span>
-                </div>
-                <p class="text-sm leading-relaxed text-on-surface-variant">Alguém tem indicação de ajuste simples para cadeira de escritório? Estou tentando melhorar minha estação de trabalho em casa.</p>
-              </div>
-              <div class="ml-2 mt-2 flex gap-6">
-                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>4</button>
-                <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
-              </div>
+            <div class="field">
+              <label for="mensagem">O que deseja criar?</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Ex.: identidade visual, artes para Instagram, cartao de visita, flyer de promocao..."></textarea>
             </div>
-          </div>
-        </div>
+
+            <div class="form-footer">
+              <button class="button" type="submit">Enviar para o WhatsApp</button>
+              <span class="form-note">O redirecionamento sera feito para o numero 55 77 99854-9552.</span>
+            </div>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-slate-100 bg-slate-50 py-12">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 sm:px-8 md:flex-row">
-      <div class="space-y-2 text-center md:text-left">
-        <span class="block text-xl font-bold text-sky-900">Clinical Serenity</span>
-        <p class="text-sm leading-relaxed text-slate-500">Projeto educativo para estudo de programação e segurança. © 2026 Clinical Serenity Education.</p>
-      </div>
-      <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
-        <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Privacy Policy</a>
-        <a href="#" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Terms of Service</a>
-        <a href="#whatsapp" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Contact Support</a>
-        <a href="#educacao" class="underline decoration-sky-500/30 underline-offset-4 transition-all hover:text-sky-600">Medical Disclaimer</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Alessandro Vilarino - Designer Grafico</p>
     </div>
   </footer>
 
-  <button type="button" onclick="scrollToWhatsApp()" aria-label="Ir para o formulário de WhatsApp" class="fixed bottom-4 right-4 z-50 inline-flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_16px_35px_rgba(37,211,102,0.35)] transition-all hover:scale-105 hover:bg-[#1ebe5d] focus:outline-none focus:ring-4 focus:ring-green-200 sm:bottom-6 sm:right-6 sm:px-5">
-    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/15">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
-        <path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.55 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.27-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.48 0 9.93-4.45 9.93-9.93a9.86 9.86 0 0 0-2.92-6.99Zm-7.02 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.22 8.22 0 0 1-1.27-4.35c0-4.53 3.69-8.22 8.23-8.22a8.17 8.17 0 0 1 5.83 2.42 8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.22 8.23Zm4.51-6.16c-.25-.13-1.47-.73-1.7-.81-.23-.09-.4-.13-.57.12-.16.24-.65.8-.8.97-.14.16-.29.18-.53.06-.25-.13-1.04-.38-1.98-1.21-.73-.66-1.22-1.47-1.37-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.13-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44l-.49-.01c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.02 0 1.19.87 2.35.99 2.51.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31Z"/>
-      </svg>
-    </span>
-    <span class="hidden text-sm font-bold sm:inline">WhatsApp</span>
-  </button>
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/5577998549552?text=Ol%C3%A1%2C%20Alessandro.%20Quero%20solicitar%20um%20or%C3%A7amento."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir conversa no WhatsApp"
+  >
+    <span class="floating-icon">WA</span>
+    <span>WhatsApp</span>
+  </a>
 
   <script>
-    // VULNERABILIDADE INTENCIONAL: inserção insegura de comentários
-    function salvarComentario() {
-      const campoComentario = document.getElementById('comentario');
-      const comentario = campoComentario.value.trim();
-      if (!comentario) {
-        return;
+    (function () {
+      const phoneNumber = "5577998549552";
+      const menuToggle = document.querySelector("[data-menu-toggle]");
+      const navLinks = document.getElementById("menu-principal");
+      const form = document.getElementById("whatsapp-form");
+      const phoneInput = document.getElementById("telefone");
+      const feedback = document.getElementById("form-feedback");
+      const revealItems = document.querySelectorAll(".reveal");
+
+      function setFeedback(message, type) {
+        feedback.textContent = message;
+        feedback.className = "form-feedback";
+        if (type) {
+          feedback.classList.add(type);
+        }
       }
 
-      const params = new URLSearchParams(window.location.search);
-      const nomeUsuario = params.get('nome') || 'Usuário';
-      const inicial = nomeUsuario.trim().charAt(0).toUpperCase() || 'U';
-      const novoComentario = `
-        <div class="flex gap-4 group">
-          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white shadow-sm">${inicial}</div>
-          <div class="flex-grow">
-            <div class="rounded-2xl rounded-tl-none bg-surface-container-high p-5 transition-colors group-hover:bg-surface-container-highest">
-              <div class="mb-2 flex items-center justify-between">
-                <span class="font-bold text-on-surface">${nomeUsuario}</span>
-                <span class="text-xs text-on-surface-variant">agora</span>
-              </div>
-              <p class="text-sm leading-relaxed text-on-surface-variant">${comentario}</p>
-            </div>
-            <div class="ml-2 mt-2 flex gap-6">
-              <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span>0</button>
-              <button type="button" class="flex items-center gap-1 text-xs font-bold text-on-surface-variant transition-colors hover:text-primary"><span class="material-symbols-outlined text-sm">chat_bubble</span>Responder</button>
-            </div>
-          </div>
-        </div>`;
-
-      const listaComentarios = document.getElementById('listaComentarios');
-      listaComentarios.innerHTML = novoComentario + listaComentarios.innerHTML;
-      campoComentario.value = '';
-    }
-
-    function verificar() {
-      const respostaSelecionada = document.querySelector('input[name="quiz"]:checked');
-      const resultado = document.getElementById('resultado');
-      resultado.classList.remove('hidden');
-
-      if (!respostaSelecionada) {
-        resultado.textContent = 'Selecione uma alternativa antes de verificar.';
-        return;
+      function sanitizePhone(value) {
+        return value.replace(/\D/g, "").slice(0, 11);
       }
 
-      if (respostaSelecionada.value === 'Topo da tela na altura dos olhos') {
-        resultado.textContent = 'Correto! O topo da tela deve ficar na altura dos olhos para reduzir a sobrecarga cervical.';
+      function formatPhone(value) {
+        const digits = sanitizePhone(value);
+
+        if (digits.length <= 2) {
+          return digits;
+        }
+
+        if (digits.length <= 7) {
+          return "(" + digits.slice(0, 2) + ") " + digits.slice(2);
+        }
+
+        if (digits.length <= 10) {
+          return "(" + digits.slice(0, 2) + ") " + digits.slice(2, 6) + "-" + digits.slice(6);
+        }
+
+        return "(" + digits.slice(0, 2) + ") " + digits.slice(2, 7) + "-" + digits.slice(7);
+      }
+
+      function openWhatsApp(message) {
+        const url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(url, "_blank", "noopener");
+      }
+
+      function validateForm(name, phone, message) {
+        if (!name) {
+          return "Informe seu nome para continuar.";
+        }
+
+        if (phone.length < 10 || phone.length > 11) {
+          return "Digite um telefone valido com DDD.";
+        }
+
+        if (!message) {
+          return "Descreva o que voce deseja criar.";
+        }
+
+        return "";
+      }
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+          const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+          menuToggle.setAttribute("aria-expanded", String(!expanded));
+          navLinks.classList.toggle("is-open");
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            menuToggle.setAttribute("aria-expanded", "false");
+            navLinks.classList.remove("is-open");
+          });
+        });
+      }
+
+      if (phoneInput) {
+        phoneInput.addEventListener("input", function () {
+          phoneInput.value = formatPhone(phoneInput.value);
+        });
+      }
+
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("nome").value.trim();
+          const phoneDigits = sanitizePhone(phoneInput.value);
+          const message = document.getElementById("mensagem").value.trim();
+          const errorMessage = validateForm(name, phoneDigits, message);
+
+          if (errorMessage) {
+            setFeedback(errorMessage, "error");
+            return;
+          }
+
+          const whatsappMessage =
+            "Ola, Alessandro!\n" +
+            "Meu nome e " + name + ".\n" +
+            "Telefone: " + phoneDigits + ".\n" +
+            "Quero criar: " + message;
+
+          setFeedback("Abrindo WhatsApp com sua mensagem...", "success");
+          openWhatsApp(whatsappMessage);
+        });
+      }
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.16 }
+        );
+
+        revealItems.forEach(function (item) {
+          observer.observe(item);
+        });
       } else {
-        resultado.textContent = 'Tente novamente. Ajuste ideal: topo da tela na altura dos olhos.';
+        revealItems.forEach(function (item) {
+          item.classList.add("is-visible");
+        });
       }
-    }
-
-    function mostrarAlertaWhatsApp(mensagem, campo) {
-      alert(mensagem);
-      if (campo) {
-        campo.focus();
-      }
-    }
-
-    function scrollToWhatsApp() {
-      const secaoWhatsApp = document.getElementById('whatsapp');
-      if (secaoWhatsApp) {
-        secaoWhatsApp.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-
-    function enviarWhatsApp() {
-      const campoNome = document.getElementById('nome');
-      const campoTelefone = document.getElementById('telefone');
-      const campoMensagem = document.getElementById('mensagem');
-
-      const nome = campoNome.value.trim();
-      const telefone = campoTelefone.value.trim();
-      const mensagem = campoMensagem.value.trim();
-      const telefoneNumeros = telefone.replace(/\D/g, '');
-
-      if (!nome) {
-        mostrarAlertaWhatsApp('Por favor, informe seu nome para continuar.', campoNome);
-        return;
-      }
-
-      if (!telefone) {
-        mostrarAlertaWhatsApp('Informe seu telefone com DDD para continuarmos.', campoTelefone);
-        return;
-      }
-
-      if (!/^\d+$/.test(telefone)) {
-        mostrarAlertaWhatsApp('Digite apenas números no telefone, sem espaços ou símbolos.', campoTelefone);
-        return;
-      }
-
-      if (telefoneNumeros.length < 10 || telefoneNumeros.length > 11) {
-        mostrarAlertaWhatsApp('O telefone deve ter 10 ou 11 dígitos brasileiros, incluindo o DDD.', campoTelefone);
-        return;
-      }
-
-      if (!mensagem) {
-        mostrarAlertaWhatsApp('Escreva sua mensagem antes de enviar para o WhatsApp.', campoMensagem);
-        return;
-      }
-
-      const texto = `Olá, meu nome é ${nome}.\nTelefone: ${telefoneNumeros}.\nGostaria de: ${mensagem}`;
-      const url = 'https://wa.me/5577998549552?text=' + encodeURIComponent(texto);
-
-      window.open(url, '_blank');
-    }
-
-    const telefoneInput = document.getElementById('telefone');
-    if (telefoneInput) {
-      telefoneInput.addEventListener('input', function () {
-        this.value = this.value.replace(/\D/g, '').slice(0, 11);
-      });
-    }
-
-    // VULNERABILIDADE INTENCIONAL: uso inseguro de parâmetros
-    const params = new URLSearchParams(window.location.search);
-    const nomeVisitante = params.get('nome');
-    if (nomeVisitante) {
-      const faixaBoasVindas = document.getElementById('boasVindas');
-      faixaBoasVindas.firstElementChild.innerHTML = 'Olá, <strong>' + nomeVisitante + '</strong>. Continue explorando os módulos de postura e participe da comunidade.';
-      faixaBoasVindas.classList.remove('hidden');
-    }
+    }());
   </script>
 </body>
 </html>
